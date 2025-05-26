@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narges Safavi | Marketing Strategist & Content Creator</title>
+    <meta name="description" content="Narges Safavi - Marketing specialist and content strategist helping brands grow through strategic communication and creative storytelling.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-navy {
+            background-color: #223843;
+        }
+        .text-navy {
+            color: #223843;
+        }
+        .bg-coral {
+            background-color: #FF6B6B;
+        }
+        .text-coral {
+            color: #FF6B6B;
+        }
+        .bg-cream {
+            background-color: #FAF3E0;
+        }
+        .text-cream {
+            color: #FAF3E0;
+        }
+        .bg-mint {
+            background-color: #CDEAC0;
+        }
+        .text-mint {
+            color: #CDEAC0;
+        }
+        .hero-image {
+            background-image: linear-gradient(rgba(34, 56, 67, 0.7), rgba(34, 56, 67, 0.7)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        .portfolio-overlay {
+            transition: 0.5s ease;
+            opacity: 0;
+        }
+        .skill-bar {
+            height: 6px;
+            background-color: #e0e0e0;
+        }
+        .skill-progress {
+            height: 100%;
+            background-color: #FF6B6B;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .nav-link:hover {
+            color: #FF6B6B !important;
+        }
+    </style>
+</head>
+<body class="bg-cream">
+    <!-- Navigation -->
+    <nav class="bg-navy text-cream py-4 px-6 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Narges Safavi</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link hover:text-coral transition">Home</a>
+                <a href="#about" class="nav-link hover:text-coral transition">About</a>
+                <a href="#portfolio" class="nav-link hover:text-coral transition">Portfolio</a>
+                <a href="#skills" class="nav-link hover:text-coral transition">Skills</a>
+                <a href="#blog" class="nav-link hover:text-coral transition">Blog</a>
+                <a href="#contact" class="nav-link hover:text-coral transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-navy w-full py-4 px-6" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="nav-link hover:text-coral transition">Home</a>
+                <a href="#about" class="nav-link hover:text-coral transition">About</a>
+                <a href="#portfolio" class="nav-link hover:text-coral transition">Portfolio</a>
+                <a href="#skills" class="nav-link hover:text-coral transition">Skills</a>
+                <a href="#blog" class="nav-link hover:text-coral transition">Blog</a>
+                <a href="#contact" class="nav-link hover:text-coral transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image text-cream min-h-screen flex items-center">
+        <div class="container mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Turning Ideas into Impact for Brands</h1>
+                    <p class="text-xl mb-8">I'm Narges Safavi, a marketing strategist and content creator passionate about helping brands grow through strategic communication and creative storytelling.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#portfolio" class="bg-coral text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition">View Portfolio</a>
+                        <a href="#contact" class="bg-transparent border-2 border-cream text-cream px-6 py-3 rounded-full font-medium hover:bg-cream hover:text-navy transition">Contact Me</a>
+                        <a href="#" class="bg-transparent border-2 border-cream text-cream px-6 py-3 rounded-full font-medium hover:bg-cream hover:text-navy transition">Download Resume</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-coral">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Narges Safavi" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-5 -right-5 bg-mint text-navy p-4 rounded-full shadow-lg">
+                            <i class="fas fa-lightbulb text-3xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-navy">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Narges at work" class="rounded-lg shadow-xl w-full">
+                        <div class="absolute -bottom-5 -right-5 bg-coral text-white p-4 rounded-lg shadow-lg">
+                            <i class="fas fa-heart text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold mb-4 text-navy">Marketing Strategist & Content Creator</h3>
+                    <p class="mb-6 text-gray-700">With a passion for brand communication and creative storytelling, I help businesses establish their voice and connect with their audience through strategic marketing initiatives. My journey in marketing began with a fascination for how brands communicate their values and has evolved into a professional pursuit of creating meaningful brand experiences.</p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-medium mb-4 text-navy">My Core Values</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <div class="bg-mint p-3 rounded-full mr-4">
+                                    <i class="fas fa-lightbulb text-navy"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Creativity</h5>
+                                    <p class="text-sm text-gray-600">Innovative solutions that stand out in crowded markets</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-mint p-3 rounded-full mr-4">
+                                    <i class="fas fa-arrows-rotate text-navy"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Flexibility</h5>
+                                    <p class="text-sm text-gray-600">Adapting strategies to evolving market conditions</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-mint p-3 rounded-full mr-4">
+                                    <i class="fas fa-people-group text-navy"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Collaboration</h5>
+                                    <p class="text-sm text-gray-600">Working closely with teams to achieve shared goals</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-mint p-3 rounded-full mr-4">
+                                    <i class="fas fa-seedling text-navy"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Growth Mindset</h5>
+                                    <p class="text-sm text-gray-600">Continuous learning and improvement</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700">My mission is to bridge the gap between brands and their audiences through thoughtful strategy and compelling content that drives engagement and business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-navy text-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">My Portfolio</h2>
+            <p class="text-center mb-16 max-w-2xl mx-auto">Selected projects showcasing my approach to brand strategy, digital marketing, and content creation.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b3da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Footwear Campaign" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Footwear Brand Relaunch</h3>
+                        <p class="text-gray-600 mb-4">Brand strategy & digital campaign for a heritage footwear brand</p>
+                        <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Footwear Brand Relaunch</h3>
+                            <p class="text-white mb-4">Challenge: Modernize a heritage brand for younger audiences while maintaining its core identity.</p>
+                            <p class="text-white mb-4">Solution: Developed a multi-channel campaign blending nostalgia with contemporary aesthetics.</p>
+                            <p class="text-white">Result: 40% increase in social engagement, 25% sales growth in target demographic.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Content Strategy" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Content Strategy Framework</h3>
+                        <p class="text-gray-600 mb-4">Developing a sustainable content ecosystem for a retail brand</p>
+                        <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Content Strategy Framework</h3>
+                            <p class="text-white mb-4">Challenge: Inconsistent brand voice across channels and content fatigue.</p>
+                            <p class="text-white mb-4">Solution: Created a modular content system with clear guidelines and repurposing strategies.</p>
+                            <p class="text-white">Result: 60% reduction in content production time, improved engagement metrics.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Social Media Campaign" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Influencer Collaboration Campaign</h3>
+                        <p class="text-gray-600 mb-4">Micro-influencer strategy for a sustainable fashion brand</p>
+                        <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Influencer Collaboration Campaign</h3>
+                            <p class="text-white mb-4">Challenge: Limited budget for influencer marketing with need for authentic engagement.</p>
+                            <p class="text-white mb-4">Solution: Curated network of micro-influencers with shared values and engaged audiences.</p>
+                            <p class="text-white">Result: 3x ROI compared to previous campaigns, lasting brand advocates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-coral text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-navy">Skills & Experience</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-6 text-navy">Professional Skills</h3>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-medium mb-2 text-navy">Hard Skills</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>Digital Marketing</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar rounded-full">
+                                    <div class="skill-progress rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>Content Writing</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar rounded-full">
+                                    <div class="skill-progress rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>Brand Storytelling</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar rounded-full">
+                                    <div class="skill-progress rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>Campaign Ideation</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar rounded-full">
+                                    <div class="skill-progress rounded-full" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-medium mb-2 text-navy">Soft Skills</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-mint text-navy px-3 py-1 rounded-full text-sm">Creative Thinking</span>
+                            <span class="bg-mint text-navy px-3 py-1 rounded-full text-sm">Adaptability</span>
+                            <span class="bg-mint text-navy px-3 py-1 rounded-full text-sm">Teamwork</span>
+                            <span class="bg-mint text-navy px-3 py-1 rounded-full text-sm">Critical Analysis</span>
+                            <span class="bg-mint text-navy px-3 py-1 rounded-full text-sm">Strategic Planning</span>
+                            <span class="bg-mint text-navy px-3 py-1 rounded-full text-sm">Communication</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-6 text-navy">Professional Journey</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-coral pl-6 py-1">
+                            <h4 class="text-lg font-medium">Marketing Specialist</h4>
+                            <p class="text-gray-600">Footwear Company | 2021 - Present</p>
+                            <p class="mt-2">Leading digital marketing initiatives, content strategy, and brand communication for a portfolio of footwear brands.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-coral pl-6 py-1">
+                            <h4 class="text-lg font-medium">Content Strategist</h4>
+                            <p class="text-gray-600">Fashion Retailer | 2019 - 2021</p>
+                            <p class="mt-2">Developed and executed content strategies across multiple channels, increasing engagement and conversion rates.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-coral pl-6 py-1">
+                            <h4 class="text-lg font-medium">Digital Marketing Assistant</h4>
+                            <p class="text-gray-600">E-commerce Startup | 2018 - 2019</p>
+                            <p class="mt-2">Supported marketing team with social media management, content creation, and campaign coordination.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="#" class="inline-flex items-center bg-navy text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition">
+                            <i class="fas fa-download mr-2"></i> Download Full Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 text-navy">Marketing Insights</h2>
+            <p class="text-center mb-16 max-w-2xl mx-auto text-gray-700">Thoughts on brand strategy, content marketing, and industry trends.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Marketing Data" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-coral">Digital Marketing</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 text-navy">The Future of Personalization in Marketing</h3>
+                        <p class="text-gray-600 mb-4">Exploring how AI and data analytics are transforming customer experiences while maintaining authenticity.</p>
+                        <a href="#" class="text-coral font-medium flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Content Strategy" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-coral">Content Strategy</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 text-navy">Building a Sustainable Content Ecosystem</h3>
+                        <p class="text-gray-600 mb-4">Strategies for creating content that serves multiple purposes across different stages of the customer journey.</p>
+                        <a href="#" class="text-coral font-medium flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Brand Storytelling" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-coral">Brand Strategy</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 text-navy">Authenticity in Brand Storytelling</h3>
+                        <p class="text-gray-600 mb-4">How heritage brands can modernize their narratives while staying true to their core values.</p>
+                        <a href="#" class="text-coral font-medium flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-navy text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-navy text-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Let's Collaborate</h2>
+            <p class="text-center mb-16 max-w-2xl mx-auto">Interested in working together or have questions about my services? Get in touch!</p>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-coral">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-coral">
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-coral">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-coral"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-coral text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-800 p-8 rounded-lg h-full">
+                        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-coral p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p>narges@example.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-coral p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Phone</h4>
+                                    <p>+98 123 456 7890</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-coral p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Location</h4>
+                                    <p>Tehran, Iran</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12">
+                            <h4 class="font-medium mb-4">Connect With Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/nargessafavi/" class="bg-gray-700 hover:bg-coral w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-coral w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-coral w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-coral w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work With Me Section -->
+    <section class="py-20 bg-coral text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Elevate Your Brand?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">I collaborate with forward-thinking brands and agencies to create impactful marketing strategies and compelling content.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#contact" class="bg-white text-coral px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition">Start a Project</a>
+                <a href="#" class="border-2 border-white px-8 py-4 rounded-full font-medium hover:bg-white hover:text-coral transition">Learn About My Process</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-white">Narges Safavi</a>
+                    <p class="mt-2">Marketing Strategist & Content Creator</p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0">
+                    <div>
+                        <h4 class="text-white font-medium mb-3">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="hover:text-coral transition">Home</a></li>
+                            <li><a href="#about" class="hover:text-coral transition">About</a></li>
+                            <li><a href="#portfolio" class="hover:text-coral transition">Portfolio</a></li>
+                            <li><a href="#blog" class="hover:text-coral transition">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-white font-medium mb-3">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-coral transition">Brand Strategy</a></li>
+                            <li><a href="#" class="hover:text-coral transition">Content Creation</a></li>
+                            <li><a href="#" class="hover:text-coral transition">Digital Marketing</a></li>
+                            <li><a href="#" class="hover:text-coral transition">Campaign Development</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-white font-medium mb-3">Connect</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/nargessafavi/" class="hover:text-coral transition">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="hover:text-coral transition">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="hover:text-coral transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="hover:text-coral transition">
+                                <i class="fab fa-medium text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Narges Safavi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Form submission (placeholder)
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! I will get back to you soon.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
